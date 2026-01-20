@@ -1,0 +1,41 @@
+# Create a welcome message
+print("Welcome to FizzBuzz!")
+
+# Create a function to print different responses based on 
+# user input
+def fizzbuzz (number):
+    result = ""
+    if number % 3 == 0: 
+        result += "Fizz"
+        
+    if number % 7 == 0: 
+        result += "Buzz"
+
+    # Add an almost Fizz response 
+    if "3" in str(number) and number % 3 != 0 and number % 7 != 0:
+        result = "Almost Fizz" 
+    
+    if result == "":
+        result  = str(number)
+    
+    return result # return a result at the end 
+
+# Ask for user input and convert it into a number
+
+n = int(input())
+
+# Create a loop to print out each number a user enterd 
+# along with using the fizzbuzz function to check each number
+
+for i in range(1, n + 1):
+     print(fizzbuzz(i))
+
+
+    
+
+
+
+
+
+
+
